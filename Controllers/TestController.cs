@@ -22,9 +22,9 @@ namespace asp_core_mvc_test.Controllers
         // 
         // GET: /HelloWorld/Welcome/ 
 
-        public string Welcome()
+        public string Welcome(string name)
         {
-            return "This is the Welcome action method...";
+            return $"Hello {name}, welcome to this MVC example!";
         }
     }
 }
