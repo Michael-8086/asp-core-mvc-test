@@ -12,3 +12,4 @@ Prerequisites:
 2. Change into the cloned directory: `cd asp-core-mvc-test`
 3. Build from the docker file: `docker build -t aspnetapptest .`
 4. Run the freshly built container image: `docker run -d -p 8080:80 --name myapp aspnetapptest`
+5. Browse to [localhost:8080](http://localhost:8080)
