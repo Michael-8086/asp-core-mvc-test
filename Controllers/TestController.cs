@@ -12,15 +12,15 @@ namespace asp_core_mvc_test.Controllers
     public class TestController : Controller
     {
         // 
-        // GET: /HelloWorld/
+        // GET: /Test/
 
         public string Index()
         {
-            return "This is my default action...";
+            return View();
         }
 
         // 
-        // GET: /HelloWorld/Welcome/ 
+        // GET: /Test/Welcome/ 
 
         public string Welcome(string name)
         {
