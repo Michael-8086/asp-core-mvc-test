@@ -22,9 +22,17 @@ namespace asp_core_mvc_test.Controllers
         // 
         // GET: /Test/Welcome/ 
 
-        public string Welcome(string name)
+        public IActionResult Welcome(string name)
         {
-            return $"Hello {name}, welcome to this MVC example!";
+            if (name != null)
+            {
+                ViewData["Message"] = $"Hello {name}, welcome to this MVC example!";
+            }
+            else
+            {
+                ViewData["Message"] = "You have not entered a name!";
+            }
+            return View();
         }
     }
 }
