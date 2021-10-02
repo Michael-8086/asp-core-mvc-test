@@ -14,7 +14,7 @@ namespace asp_core_mvc_test.Controllers
         // 
         // GET: /Test/
 
-        public string Index()
+        public IActionResult Index()
         {
             return View();
         }
